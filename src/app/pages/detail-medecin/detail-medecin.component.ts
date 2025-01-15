@@ -60,7 +60,8 @@ export class DetailMedecinComponent {
     }
     console.log(rapportDeVisite);
     //creer le nouveau rapport dans la BD
-    this.creerRapportVisite(rapportDeVisite);
+    //pour cela souscrire a l'observable 
+    this.creerRapportVisite(rapportDeVisite).subscribe();
   }
 
   //exemple d'appel API restGSB de la creation d'un nouveau rapport
