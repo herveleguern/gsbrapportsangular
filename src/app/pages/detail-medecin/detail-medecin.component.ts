@@ -81,9 +81,8 @@ export class DetailMedecinComponent {
       }
     });
     console.log(params.toString());
-    //OK date=2025-01-08&motif=poiu&bilan=poiu&idVisiteur=a55&idMedecin=640
+    //OK date=2025-01-08&motif=poiu&bilan=poiu&idVisiteur=a55&idMedecin=640&medicaments=null
     return this.httpClient.get<RapportVisite>('http://localhost/restGSB/nouveaurapport', {params});
-    //KO semble ne pas appeler le "service".
-    //KO pas d'insert en base
+    
   }
 }
