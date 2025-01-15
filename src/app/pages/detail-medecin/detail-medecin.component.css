@@ -1,0 +1,16 @@
+.doctor {
+    display: grid;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.doctor__metadata {
+    display: flex;
+    align-items: center;
+}
+
+.doctor__metadata svg {
+    margin-right: 0.5rem;
+    fill: black;
+}

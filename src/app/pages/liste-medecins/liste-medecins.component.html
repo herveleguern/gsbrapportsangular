@@ -1,0 +1,8 @@
+<h1>Liste des médecins</h1>
+<app-doctor-filters (searchDoctor)="searchDoctor($event)"></app-doctor-filters>
+Nb médecins {{filteredMedecins.length}}
+<div class="doctors">
+  @for (medecin of filteredMedecins; track $index) {
+    <app-doctor [doctor]="medecin"></app-doctor>
+  }
+</div>

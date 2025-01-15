@@ -2,8 +2,7 @@ export interface Medecin {
   id: number;
   nom: string;
   prenom: string;
-  specialite: string;
+  specialitecomplementaire: string;
   adresse: string;
-  telephone: string;
-  email: string;
+  tel: string;
 }
